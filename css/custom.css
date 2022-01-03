@@ -1,0 +1,58 @@
+.background-image {
+  background-image: url(../img/slider/dtla-blue.jpg);
+  background-position: center;
+  height: 100vh;
+}
+
+.skills-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-details {
+  text-align: center;
+  /* width: 70px; */
+}
+
+.devicon-svg {
+  width: 80px;
+  height: 80px;
+}
+
+.contact-text a {
+  color: #8a8a8a
+}
+
+.contact-text a:hover {
+  color: #1c1c1c
+}
+
+.video-preview {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .col-sm-6 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      }
+    #home {
+      height: 100vh;
+    }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #home {
+      height: 100vh;
+    }
+}
