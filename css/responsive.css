@@ -45,12 +45,20 @@
     padding-left: 0;
   }
   
-  
   }
   
   
   /* Tablet desktop :768px. */
   @media (min-width: 768px) and (max-width: 991px) {
+
+  .nav-item.special {
+    display: flex;
+  }
+
+  .nav-item.special li {
+    margin-left: 0 !important;
+  }
+
   .navbar-toggler {
     padding: 8px;
     color: #fff;
@@ -160,14 +168,33 @@
   }
   .about-me-info {
     padding-left: 0;
+    text-align: center;
   }
   
+  .center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me img {
+    /* width: 220px; */
+    margin-left: 0px;
+  }
   
   }
   
   
   /* small mobile :320px. */
   @media (max-width: 767px) {
+
+  .nav-item.special {
+    display: flex;
+  }
+  .nav-item.special li {
+    margin-left: 0 !important;
+  }
+
   .navbar-toggler {
     padding: 8px;
     border-radius: 5px;
@@ -366,9 +393,18 @@
   }
   .about-me-info {
     padding-left: 0;
+    text-align: center;
   }
-  
+  .about-me img {
+    width: 220px;
+    /* margin-left: 30px; */
   }
+  .center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
   
   /* Large Mobile :480px. */
   @media only screen and (min-width: 560px) and (max-width: 767px) {

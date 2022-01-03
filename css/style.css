@@ -235,6 +235,21 @@ label {
 	color: #fff
 }
 
+.nav-item.special {
+	display: none;
+	font-size: 30px;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0px;
+}
+
+.special .social-icons {
+	color: #fcfcfc;
+}
+.special .social-icons:hover {
+	color: #5a5a5a;
+}
+
 /* scrollUp */
 #scrollUp {
 	background: #000;
@@ -245,7 +260,7 @@ label {
 	color: #fff;
 	font-size: 17px;
 	text-align: center;
-	border-radius: 50%;
+	border-radius: 5px;
 	font-size: 16px;
 	line-height: 40px;
 }
@@ -508,7 +523,9 @@ label {
 
 /* ab me */
 .about-me img {
-	width: 100%;
+	width: 380px;
+	height: auto;
+	border-radius: 100%;
 }
 .about-me-info h2 {
 	font-size: 26px;
@@ -795,9 +812,11 @@ label {
 }
 
 /* 7. footer */
-.footer-area .logo-footer {
-	font-size: 40px;
-	margin-bottom: 40px;
+.footer-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .footer-area h3 > i {
 	color: #fff;
@@ -805,10 +824,7 @@ label {
 
 .footer-icon {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
 	font-size: 18px;
-
 }
 
 .footer-icon a {
