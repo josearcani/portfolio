@@ -821,6 +821,13 @@ label {
 	font-size: 14px;color: #8a8a8a;
 }
 
+.ajax-response.error {
+	color: red;
+}
+.ajax-response.success {
+	color: green;
+}
+
 /* 7. footer */
 .footer-area {
 	display: flex;
