@@ -23,21 +23,24 @@ function handleSubmit(e) {
   const req = {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/JSON'
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
     },
     body: JSON.stringify(formData)
   }
 
-  fetch('/api/contact', req)
+  fetch('https://formsubmit.co/ajax/juanjose.arcani2309@gmail.com', req)
     .then(res => res.json())
-    .then(data => {
-      if (data.error) {
+    .then(({ success, message }) => {
+
+
+      if (success === 'false') {
         formMessages.classList.remove('success')
         formMessages.classList.add('error')
-        formMessages.textContent = data.error
+        formMessages.textContent = message
         return
       }
-      return sendSuccess(data)
+      return sendSuccess(message)
     })
     .catch(err => console.log('error:', err))
 }
