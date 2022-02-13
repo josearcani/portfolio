@@ -383,6 +383,12 @@ label {
 	position: relative;
 	z-index: 999;
 }
+.silder-content.cta-project {
+	position: absolute;
+	bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
 .silder-content h1 {
 	font-size: 55px;
 	font-weight: 800;
